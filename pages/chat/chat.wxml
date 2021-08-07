@@ -1,0 +1,40 @@
+<view class="title">{{title}}</view>
+<!-- 对话部分 -->
+<view class="que" >
+  <scroll-view class="con" scroll-y>
+    <block wx:for="{{says}}" wx:for-item="item" wx:key="index">
+      <!-- 我说的话以及我的图片 -->
+      <view class="iSay">
+        <view class="right-img">
+          <image src="{{headRight}}"></image>
+        </view>
+        <view class="right-text">
+          <view>{{item.iSay}}</view>
+        </view>
+      </view>
+
+
+      <!-- 机器人说的话以及机器人的图片 -->
+      <view class="robotSay">
+        <view class="left-img">
+          <image src="{{headLeft}}"></image>
+        </view>
+        <view class="left-text">
+          <view>{{item.rSay}}</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+
+</view>
+
+<!-- 按钮部分 -->
+<view class="bottom">
+  <view class="send">
+    <form bindsubmit="converSation">
+      <input type="text" placeholder="说点什么吧~" name="say" value="{{tempISay}}"></input>
+      <button class="btn-d" bindtap="deleteChat">清空</button>
+      <button class="submit" id="btn" form-type="submit">发送</button>
+    </form>
+  </view>
+</view>

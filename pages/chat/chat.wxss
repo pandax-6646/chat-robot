@@ -1,0 +1,138 @@
+/* 标题部分 */
+.title {
+  position: fixed;
+  height: 6vh;
+  width: 100%;
+  top: 0px;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  background-color: #fff;
+  color: black;
+  box-shadow: 16rpx -4rpx 30rpx rgb(209, 204, 204);
+}
+
+/* 对话框部分 */
+.que {
+  width: 98%;
+  margin-top: 7vh;
+  height: 83vh;
+  margin-left: 1%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.con {
+  width: 95%;
+  height: 100%;
+  margin-left: 20rpx;
+}
+
+.iSay {
+  width: 70%;
+  margin-left: 30%;
+  margin-top: 60rpx;
+}
+
+.iSay .right-img {
+  position: relative;
+  height: 60rpx;
+  width: 60rpx;
+  left: 88%;
+  margin-top: 5rpx;
+}
+
+.iSay .right-text {
+  width: 80%;
+  margin-top: -65rpx;
+}
+
+.iSay .right-text view {
+  padding: 10rpx 30rpx;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  border-radius: 30rpx;
+  background-color: #eee;
+  color: green;
+  font-size: 25rpx;
+}
+
+.robotSay {
+  width: 70%;
+  margin-top: 30rpx;
+}
+
+.robotSay .left-img {
+  width: 75rpx;
+  height: 80rpx;
+}
+
+.robotSay .left-text {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: -60rpx;
+}
+
+.robotSay .left-text view {
+  padding: 10rpx 30rpx;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  border-radius: 30rpx;
+  background-color: #eee;
+  color: green;
+  font-size: 25rpx;
+}
+
+/* 按钮部分 */
+.bottom {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  bottom: 0rpx;
+  background-color: gray;
+}
+
+.send {
+  position: fixed;
+  width: 100%;
+  bottom: 20rpx;
+  height: 66rpx;
+}
+
+input {
+  width: 55%;
+  height: 66rpx;
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  border-radius: 30rpx;
+  border: 1rpx solid black;
+  background-color: #fff;
+}
+
+.send button {
+  float: right;
+  width: 20%;
+  height: 66rpx;
+  bottom: 66rpx;
+  margin-right: 10rpx;
+  border-radius: 30rpx;
+  line-height: 66rpx;
+  color: #fff;
+
+}
+
+.send button.submit {
+  background-color: rgb(62, 214, 143);
+}
+
+.send button.btn-d {
+  background-color: black;
+}
+
+.robotSay .left-img image,
+.iSay .right-img image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
